@@ -35,21 +35,7 @@
         font-size: 14px;
     }
 </style>
-<script>
-    // Language detection via URL: ?lang=zh or ?lang=en
-    function getLang() {
-        const params = new URLSearchParams(window.location.search);
-        return params.get("lang") || "en";
-    }
 
-    function switchLanguage() {
-        const lang = getLang();
-        document.getElementById("en").style.display = lang === "en" ? "block" : "none";
-        document.getElementById("zh").style.display = lang === "zh" ? "block" : "none";
-    }
-
-    window.onload = switchLanguage;
-</script>
 </head>
 <body>
 
@@ -106,7 +92,7 @@
     </div>
 
     <!-- Chinese Content -->
-    <div id="zh" style="display:none;">
+    <div id="zh">
         <h1>隐私政策</h1>
         <p class="italic">最后更新日期: 2026年8月</p>
 
