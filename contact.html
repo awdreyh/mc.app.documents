@@ -44,20 +44,7 @@
     }
 </style>
 
-<script>
-    function getLang() {
-        const params = new URLSearchParams(window.location.search);
-        return params.get("lang") || "en";
-    }
 
-    function switchLanguage() {
-        const lang = getLang();
-        document.getElementById("en").style.display = lang === "en" ? "block" : "none";
-        document.getElementById("zh").style.display = lang === "zh" ? "block" : "none";
-    }
-
-    window.onload = switchLanguage;
-</script>
 </head>
 
 <body>
@@ -69,7 +56,7 @@
         <p class="italic">Last Updated: August 2026</p>
 
         <p>
-            If you have any questions, feedback, or need support for the Moon Cake Calendar App,
+            If you have any questions, feedback, or need support for the Mooncake Calculator App,
             you can reach us using the contact information below.
         </p>
 
@@ -77,7 +64,7 @@
             <h2>Email Support</h2>
             <p>
                 For general inquiries, technical issues, or feedback:<br>
-                <strong>mc.cal.app@gmail.com</strong>
+                 <strong><a href="maito:mc.cal.app@gmail.com">mc.cal.app@gmail.com</a></strong>
             </p>
 
             <h2>Response Time</h2>
@@ -100,7 +87,7 @@
         <p class="italic">最后更新日期: 2026年8月</p>
 
         <p>
-            如果您对 Moon Cake Calendar App 有任何疑问、反馈或需要技术支持，
+            如果您对 Mooncake Calculator App 有任何疑问、反馈或需要技术支持，
             您可以通过以下方式联系我们。
         </p>
 
@@ -108,7 +95,7 @@
             <h2>电子邮件支持</h2>
             <p>
                 如需一般咨询、技术问题或反馈，请发送邮件至：<br>
-                <strong>mc.cal.app@gmail.com</strong>
+                <strong><a href="maito:mc.cal.app@gmail.com">mc.cal.app@gmail.com</a></strong>
             </p>
 
             <h2>回复时间</h2>
