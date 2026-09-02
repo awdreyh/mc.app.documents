@@ -31,3 +31,100 @@
         font-size: 16px;
         line-height: 1.6;
     }
+    .italic {
+        font-style: italic;
+        font-size: 14px;
+    }
+    .contact-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+    function getLang() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("lang") || "en";
+    }
+
+    function switchLanguage() {
+        const lang = getLang();
+        document.getElementById("en").style.display = lang === "en" ? "block" : "none";
+        document.getElementById("zh").style.display = lang === "zh" ? "block" : "none";
+    }
+
+    window.onload = switchLanguage;
+</script>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- English -->
+    <div id="en">
+        <h1>Contact Us</h1>
+        <p class="italic">Last Updated: August 2026</p>
+
+        <p>
+            If you have any questions, feedback, or need support for the Moon Cake Calendar App,
+            you can reach us using the contact information below.
+        </p>
+
+        <div class="contact-box">
+            <h2>Email Support</h2>
+            <p>
+                For general inquiries, technical issues, or feedback:<br>
+                <strong>mc.cal.app@gmail.com</strong>
+            </p>
+
+            <h2>Response Time</h2>
+            <p>
+                We typically respond within 3–5 business days.
+            </p>
+
+            <h2>Additional Notes</h2>
+            <p>
+                • We do not collect personal data.<br>
+                • Please avoid sending sensitive information.<br>
+                • For bug reports, include your device model and OS version.
+            </p>
+        </div>
+    </div>
+
+    <!-- Chinese -->
+    <div id="zh" style="display:none;">
+        <h1>联系我们</h1>
+        <p class="italic">最后更新日期: 2026年8月</p>
+
+        <p>
+            如果您对 Moon Cake Calendar App 有任何疑问、反馈或需要技术支持，
+            您可以通过以下方式联系我们。
+        </p>
+
+        <div class="contact-box">
+            <h2>电子邮件支持</h2>
+            <p>
+                如需一般咨询、技术问题或反馈，请发送邮件至：<br>
+                <strong>mc.cal.app@gmail.com</strong>
+            </p>
+
+            <h2>回复时间</h2>
+            <p>
+                我们通常会在 3–5 个工作日内回复。
+            </p>
+
+            <h2>注意事项</h2>
+            <p>
+                • 我们不收集任何个人数据。<br>
+                • 请勿发送敏感信息。<br>
+                • 如需报告错误，请附上您的设备型号和系统版本。
+            </p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
